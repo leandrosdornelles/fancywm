@@ -1239,7 +1239,7 @@ namespace FancyWM
                         lock (m_savedLocations)
                         {
                             // Be resilient to multiple OnWindowStateChanged events happening one after the other
-                            m_savedLocations[e.Source] = new NodeLocation(window);
+                            
                         }
                         InvalidateLayout();
                         m_backend.UnregisterWindow(e.Source);
